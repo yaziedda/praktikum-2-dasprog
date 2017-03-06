@@ -7,8 +7,8 @@ void task1(){
 
     int kurs, uang, jumlah;
     cout << "Masukan kurs dolar : $ "; cin>>kurs;
+    jumlah = uang / kurs;
     cout << "Masukan jumlah uang yang akan di konversi : Rp. ";cin >> uang;
-    jumlah = kurs * uang;
     cout << "\n";
     cout << "Hasil konversi adalah $ "; cout << jumlah;
     cout << "\n";
@@ -21,19 +21,20 @@ void task2(){
     int mt1, mt2, mt3, mt4, mt5, jumlah_mt, jumlah_hasil_mt, hasil;
 
     // input jumlah mt
-    jumlah_mt = 4;
+    jumlah_mt = 5;
 
     cout << "Masukan nilai ke 1 : "; cin >> mt1;
     cout << "Masukan nilai ke 2 : "; cin >> mt2;
     cout << "Masukan nilai ke 3 : "; cin >> mt3;
     cout << "Masukan nilai ke 4 : "; cin >> mt4;
+    cout << "Masukan nilai ke 5 : "; cin >> mt5;
 
     // proses
-    jumlah_hasil_mt = mt1+mt2+mt3+mt4;
+    jumlah_hasil_mt = mt1+mt2+mt3+mt4+mt5;
     hasil = jumlah_hasil_mt / jumlah_mt;
 
     cout << "\n";
-    cout << "Hasil jumlah nilai : "; cout << hasil; cout << "\n";
+    cout << "Hasil jumlah nilai : "; cout << jumlah_hasil_mt; cout << "\n";
     cout << "Hasil nilai rata rata adalah : "; cout << hasil;
     cout << "\n";
 
